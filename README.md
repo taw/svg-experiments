@@ -7,3 +7,4 @@ Some experiments what's possible with SVGs
 * 05 - html using embedded svg and `script` in html
 * 06 - html using embedded svg and `script` in svg
 * 07 - html using svg with img and `script` in html (this combination does not work)
+* 08 - html using svg with img and `script` in svg (works only if svg opened directly, not in html)
