@@ -4,10 +4,16 @@
     <title>SVG Experiments</title>
   </head>
   <body>
+    <!-- This doesn't work -->
     <img src="./07.svg" />
+
+    <!-- This works -->
+    <object id="svg-object" data="./08.svg" type="image/svg+xml"></object>
+
     <script>
       setInterval(() => {
-        let el = document.getElementById("theRect");
+        let svg = document.querySelector("object").contentDocument;
+        let el = svg.getElementById("theRect");.
         let r = Math.floor(Math.random() * 256);
         let g = Math.floor(Math.random() * 256);
         let b = Math.floor(Math.random() * 256);
