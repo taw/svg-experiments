@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SVG Experiments</title>
+  </head>
+  <body>
+    <img src="./07.svg" />
+    <script>
+      setInterval(() => {
+        let el = document.getElementById("theRect");
+        let r = Math.floor(Math.random() * 256);
+        let g = Math.floor(Math.random() * 256);
+        let b = Math.floor(Math.random() * 256);
+        let color = `rgb(${r},${g},${b})`;
+        el.setAttribute('fill', color);
+      }, 1000/60);
+    </script>
+  </body>
+</html>
