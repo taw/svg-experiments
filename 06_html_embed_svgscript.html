@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SVG Experiments</title>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="240" height="120">
+      <rect id="theRect" x="14" y="23" width="200" height="50" fill="lime" stroke="black" />
+      <script>
+        setInterval(() => {
+          let el = document.getElementById("theRect");
+          let r = Math.floor(Math.random() * 256);
+          let g = Math.floor(Math.random() * 256);
+          let b = Math.floor(Math.random() * 256);
+          let color = `rgb(${r},${g},${b})`;
+          el.setAttribute('fill', color);
+        }, 1000 / 60);
+      </script>
+    </svg>
+  </body>
+</html>

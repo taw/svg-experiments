@@ -4,3 +4,5 @@ Some experiments what's possible with SVGs
 * 02 - html using svg with img
 * 03 - html using embedded svg and `foreignObject`
 * 04 - html using svg with img and `foreignObject`
+* 05 - html using embedded svg and `script` in html
+* 06 - html using embedded svg and `script` in svg
